@@ -10,7 +10,7 @@ Mk-Auth is a Brazilian Management System for Internet Service Providers used to 
 It is possible bypass a upload file restriction, uploading a .php file that guarantees remote code execution (RCE) accessing the .php file uploaded.
 
 ##Additional Information:
-Is possible for an authenticated user to upload a .php file and get a remote code execution (RCE). After upload the file, the user need to bruteforce the prefix of the name file, for example, if the user upload the file foo.phpJunk123png the name of the file into the system will be af32g44r3f980_foo.phpJunk123png so the attacker need to use a tool to brute the prefix to gain access to the file and get the (RCE).
+Is possible for an authenticated user to upload a .php file and get a remote code execution (RCE). After upload the file, the user need to bruteforce the prefix of the name file, for example, if the user upload the file foo.phpJunk123png the name of the file into the system will be af32g44r3f980_foo.phpJunk123png so the attacker need to use a tool to bruteforce the prefix to gain access to the file and get the (RCE).
 
 the path to access the file is:
 
