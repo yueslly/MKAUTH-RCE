@@ -46,5 +46,5 @@ Yueslly Lisboa (0xC4CTU$) | yuesllylisboa[at]gmail.com.br
 
 ##Thanks to:
 Alan Lacerda (alacerda) | alacerda@intruderlabs.com.br
-Filipe C. (SK) | fsantos@intruderlabs.com.br
 All members of intruderLabs <3
+and Filipe C. (SK)
