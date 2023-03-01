@@ -10,11 +10,13 @@ Mk-Auth is a Brazilian Management System for Internet Service Providers used to 
 It is possible bypass a upload file restriction, uploading a .php file that guarantees remote code execution (RCE) accessing the .php file uploaded.
 
 ##Additional Information:
-Is possible for an authenticated user to upload a .php file and get a remote code execution (RCE). After upload the file, the user need to bruteforce the prefix of the name file, for example, if the user upload the file foo.php123png the name of the file into the system will be af32g44r3f980_foo.php123png so the attacker need to use a tool to brute the prefix to gain access to the file and get the (RCE).
+Is possible for an authenticated user to upload a .php file and get a remote code execution (RCE). After upload the file, the user need to bruteforce the prefix of the name file, for example, if the user upload the file foo.phpJunk123png the name of the file into the system will be af32g44r3f980_foo.phpJunk123png so the attacker need to use a tool to brute the prefix to gain access to the file and get the (RCE).
 
 the path to access the file is:
 
 https://{{HOST}}/mkfiles/{{FILE_UPLOADED}}
+
+Note: To bypass the upload file restriction you need to use the suffix ".phpJunk123png", it will be uploaded and interpreted by the system.
 
 ##Vulnerability Type:
 portswigger: https://portswigger.net/web-security/access-control/idor
@@ -30,14 +32,11 @@ Probably previous are also affected
 ##Affected Component:
 Central: Suporte: Fale Conosco
 
-##Attack Vector:
-Remote
-
 ##Code Execution:
 Yes
 
 ##Attack Vector:
-An authenticated user must access the .php file uploaded.
+Remote -- An authenticated user must access the .php file uploaded to gain remote code execution (RCE).
 
 ##Reference:
 	http://mk-auth.com.br/
@@ -47,5 +46,5 @@ Yueslly Lisboa (0xC4CTU$) | yuesllylisboa[at]gmail.com.br
 
 ##Thanks to:
 Alan Lacerda (alacerda) | alacerda@intruderlabs.com.br
-Filipe Cordeiro (SK) | fsantos@intruderlabs.com.br
+Filipe C. (SK) | fsantos@intruderlabs.com.br
 All members of intruderLabs <3
