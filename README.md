@@ -36,7 +36,7 @@ Central: Suporte: Fale Conosco
 Yes
 
 ##Attack Vector:
-Remote -- An authenticated user must access the .php file uploaded to gain remote code execution (RCE).
+Remote -- An authenticated user must access the .php file uploaded (https://{{HOST}}/mkfiles/{{FILE_UPLOADED}}) to gain remote code execution (RCE).
 
 ##Reference:
 	http://mk-auth.com.br/
